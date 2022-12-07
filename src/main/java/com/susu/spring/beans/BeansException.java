@@ -1,8 +1,8 @@
 package com.susu.spring.beans;
 
 /**
- * <p>Description: Bean Factory</p>
- * <p>Bean 工厂</p>
+ * <p>Description: Bean Exception</p>
+ * <p>Bean 空异常</p>
  *
  * @author sujay
  * @version 1.0.0
