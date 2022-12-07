@@ -22,12 +22,11 @@ public interface BeanFactory {
 
     /**
      * <p>Description: Include beans or not</p>
-     * <p>是否包含 bean</p
+     * <p>是否包含 bean</p>
      *
      * @param name bean名称
      * @return true/false
      */
     boolean containsBean(String name);
-
 
 }
