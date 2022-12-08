@@ -52,6 +52,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader i
      */
     @Override
     public void refresh() throws BeansException {
+
         // 创建BeanFactory，并加载BeanDefinition
         refreshBeanFactory();
         ConfigurableListableBeanFactory beanFactory = getBeanFactory();
