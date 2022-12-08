@@ -1,10 +1,12 @@
-package com.susu.spring.beans;
+package com.susu.spring.beans.factory;
+
+import com.susu.spring.beans.BeansException;
 
 /**
  * <p>Description: Bean Factory</p>
  * <p>Bean 容器</p>
  *
- * @author sujay
+ * @author fxbsujay@gmail.com
  * @version 1.0.0
  * @since 1.0.0
  */
