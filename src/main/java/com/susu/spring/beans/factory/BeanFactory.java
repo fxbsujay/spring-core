@@ -23,6 +23,21 @@ public interface BeanFactory {
     Object getBean(String name) throws BeansException;
 
     /**
+     * <p>Description: 根据名称和类型查找bean</p>
+     *
+     * @param name          名称
+     * @param requiredType  类型
+     */
+    <T> T getBean(String name, Class<T> requiredType) throws BeansException;
+
+    /**
+     * <p>Description: 根据类型查找bean</p>
+     *
+     * @param requiredType  类型
+     */
+    <T> T getBean(Class<T> requiredType) throws BeansException;
+
+    /**
      * <p>Description: Include beans or not</p>
      * <p>是否包含 bean</p>
      *
@@ -30,5 +45,4 @@ public interface BeanFactory {
      * @return true/false
      */
     boolean containsBean(String name);
-
 }
