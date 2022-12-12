@@ -9,9 +9,15 @@ import com.susu.spring.beans.factory.BeanFactoryAware;
 import com.susu.spring.beans.factory.ConfigurableListableBeanFactory;
 import com.susu.spring.beans.factory.config.InstantiationAwareBeanPostProcessor;
 import com.susu.spring.core.convert.ConversionService;
-
 import java.lang.reflect.Field;
 
+/**
+ * <p>Description: 完成基本的属性注入功能(@Autowired、@Value 注解功能) </p>
+ *
+ * @author fxbsujay@gmail.com
+ * @version 1.0.0
+ * @since 2022-12-12
+ */
 public class AutowiredAnnotationBeanPostProcessor implements InstantiationAwareBeanPostProcessor, BeanFactoryAware {
 
     private ConfigurableListableBeanFactory beanFactory;
