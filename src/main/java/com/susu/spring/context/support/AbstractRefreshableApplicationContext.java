@@ -13,7 +13,6 @@ import com.susu.spring.beans.factory.ConfigurableListableBeanFactory;
 
 public class AbstractRefreshableApplicationContext extends AbstractApplicationContext {
 
-
     @Override
     public void registerShutdownHook() {
 
