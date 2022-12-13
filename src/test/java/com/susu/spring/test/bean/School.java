@@ -1,4 +1,4 @@
-package com.susu.spring.bean;
+package com.susu.spring.test.bean;
 
 import com.susu.spring.beans.factory.annotation.Autowired;
 import com.susu.spring.core.stereotype.Component;

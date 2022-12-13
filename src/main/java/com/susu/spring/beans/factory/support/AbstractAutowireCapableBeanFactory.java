@@ -67,7 +67,6 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
         Object bean;
         try {
             bean = createBeanInstance(beanDefinition);
-
             // 为解决循环依赖问题，将实例化后的bean放进缓存中提前暴露
             if (beanDefinition.isSingleton()) {
                 Object finalBean = bean;
@@ -78,7 +77,6 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
                     }
                 });
             }
-
             // 实例化bean之后执行
             boolean continueWithPropertyPopulation = applyBeanPostProcessorsAfterInstantiation(beanName, bean);
             if (!continueWithPropertyPopulation) {
@@ -88,15 +86,13 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
             applyBeanPostProcessorsBeforeApplyingPropertyValues(beanName, bean, beanDefinition);
             // 为bean填充属性
             applyPropertyValues(beanName, bean, beanDefinition);
-            //执行bean的初始化方法和BeanPostProcessor的前置和后置处理方法
+            // 执行bean的初始化方法和BeanPostProcessor的前置和后置处理方法
             bean = initializeBean(beanName, bean, beanDefinition);
         } catch (Exception e) {
             throw new BeansException("Instantiation of bean failed", e);
         }
-
         //注册有销毁方法的bean
         registerDisposableBeanIfNecessary(beanName, bean, beanDefinition);
-
         Object exposedObject = bean;
         if (beanDefinition.isSingleton()) {
             //如果有代理对象，此处获取代理对象

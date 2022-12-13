@@ -1,4 +1,4 @@
-package com.susu.spring.common;
+package com.susu.spring.test.common;
 
 import com.susu.spring.beans.BeansException;
 import com.susu.spring.beans.PropertyValue;
