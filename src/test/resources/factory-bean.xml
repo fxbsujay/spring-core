@@ -7,19 +7,8 @@
 		 http://www.springframework.org/schema/context
 		 http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
-    <bean id="school" class="com.susu.spring.test.bean.School">
-        <property name="name" value="家里蹲大学"/>
-        <property name="student" ref="student"/>
-    </bean>
-
-    <bean id="student" class="com.susu.spring.test.bean.Student">
+    <bean id="student" class="com.susu.spring.test.bean.StudentFactoryBean">
         <property name="name" value="张三"/>
     </bean>
-
-    <bean class="com.susu.spring.test.common.SchoolBeanFactoryPostProcessor"/>
-
-    <bean class="com.susu.spring.test.common.StudentBeanPostProcessor"/>
-
-    <bean id="helloWorldService" class="com.susu.spring.test.bean.HelloWorldService"/>
 
 </beans>
