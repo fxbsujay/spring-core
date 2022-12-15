@@ -12,9 +12,8 @@ public class HelloWorldService implements ApplicationContextAware, BeanFactoryAw
 
     private BeanFactory beanFactory;
 
-    public String sayHello() {
+    public void sayHello() {
         System.out.println("Hello World !!");
-        return "Hello World !!";
     }
 
     @Override
