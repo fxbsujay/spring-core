@@ -35,6 +35,7 @@ public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
     private final Map<String, DisposableBean> disposableBeans = new HashMap<>();
 
     @Override
+
     public Object getSingleton(String beanName) {
         Object singletonObject = singletonObjects.get(beanName);
         if (singletonObject == null) {
@@ -62,7 +63,6 @@ public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
         singletonFactories.put(beanName, singletonFactory);
     }
 
-
     public void registerDisposableBean(String beanName, DisposableBean bean) {
         disposableBeans.put(beanName, bean);
     }
@@ -80,3 +80,4 @@ public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
     }
 
 }
+

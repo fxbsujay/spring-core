@@ -72,10 +72,10 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader i
         // 注册事件监听器
         registerListeners();
 
-        //注册类型转换器和提前实例化单例bean
+        // 注册类型转换器和提前实例化单例bean
         finishBeanFactoryInitialization(beanFactory);
 
-        //发布容器刷新完成事件
+        // 发布容器刷新完成事件
         finishRefresh();
     }
 
