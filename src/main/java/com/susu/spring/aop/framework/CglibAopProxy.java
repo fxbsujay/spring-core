@@ -21,7 +21,6 @@ public class CglibAopProxy implements AopProxy {
 		this.advised = advised;
 	}
 
-
 	@Override
 	public Object getProxy() {
 		Enhancer enhancer = new Enhancer();
